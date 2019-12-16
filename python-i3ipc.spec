@@ -10,6 +10,7 @@ Source0:        https://github.com/acrisci/i3ipc-python/archive/v%{version}.tar.
 Patch0:         0001-Adapt-test-launcher-for-our-envirnoment.patch
 
 BuildRequires:  pkgconfig(python)
+BuildRequires:  python-setuptools
 
 %global desc \
 i3's interprocess communication (or ipc) is the interface i3wm uses to receive\
