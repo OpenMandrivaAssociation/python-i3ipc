@@ -1,13 +1,11 @@
 Name:           python-i3ipc
-Version:        1.5.1
-Release:        1
+Version:	2.1.1
+Release:	1
 Summary:        An improved Python library to control i3wm
 License:        BSD
 URL:            https://github.com/acrisci/i3ipc-python
 BuildArch:      noarch
 Source0:        https://github.com/acrisci/i3ipc-python/archive/v%{version}.tar.gz
-# https://github.com/acrisci/i3ipc-python/pull/76
-Patch0:         0001-Adapt-test-launcher-for-our-envirnoment.patch
 
 BuildRequires:  pkgconfig(python)
 BuildRequires:  python-setuptools
@@ -29,8 +27,6 @@ daemons, and pagers.\
 %prep
 %setup -q -n i3ipc-python-%{version}
 %autopatch -p1
-
-sed -i '/^#!/d' i3ipc/i3ipc.py
 
 %build
 %py3_build
