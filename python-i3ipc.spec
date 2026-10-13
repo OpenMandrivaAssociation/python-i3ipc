@@ -1,8 +1,9 @@
 Name:           python-i3ipc
 Version:	2.2.1
-Release:	3
+Release:	4
 Summary:        An improved Python library to control i3wm
 License:        BSD
+Group:          Development/Python
 URL:            https://github.com/acrisci/i3ipc-python
 BuildArch:      noarch
 Source0:        https://github.com/acrisci/i3ipc-python/archive/v%{version}.tar.gz
